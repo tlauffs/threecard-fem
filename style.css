@@ -1,0 +1,122 @@
+body,
+html {
+  background-color: #f2f2f2;
+  font-family: "Lexend Deca", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+}
+
+h1 {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 2.5rem;
+  margin: 4.5rem 0 2rem 0;
+  color: #f2f2f2;
+  font-weight: bold;
+}
+
+p {
+  font-size: 0.9375rem;
+  line-height: 1.5625rem;
+  margin: 0;
+  opacity: 0.75;
+  color: white;
+}
+
+.btn-learn {
+  margin-top: 5rem;
+  padding: 0.6875rem 2rem;
+  background-color: #f2f2f2;
+  border-radius: 2rem;
+  border: 1px #f2f2f2 solid;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+
+.btn-learn:hover {
+  background-color: transparent;
+}
+
+.btn-learn:hover > p {
+  color: #f2f2f2 !important;
+}
+
+.flex {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0 3rem;
+  width: min(100%, 57.5rem);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 48rem) {
+  .grid {
+    grid-template-columns: 1fr;
+    margin: 1rem;
+    max-width: 20rem;
+  }
+}
+
+.card {
+  padding: 3rem;
+  position: relative;
+  transition: all 250ms ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-content {
+  z-index: 2;
+  position: relative;
+}
+
+.card-1 {
+  background-color: #e28625;
+}
+
+.card-img {
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+  height: 2.5rem;
+  z-index: 1;
+  transition: all 250ms ease-in-out;
+}
+
+.card:hover .card-img {
+  scale: 4;
+}
+
+.card-1-learn-text{
+  color: #e28625;
+  opacity: 100;
+}
+
+.card-2 {
+  background-color: #006971;
+}
+
+.card-2-learn-text{
+  color: #006971;
+  opacity: 100;
+}
+
+.card-3 {
+  background-color: #004140;
+}
+
+.card-3-learn-text {
+  color: #004140;
+  opacity: 100;
+}
